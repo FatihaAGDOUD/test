@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line1"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="horizontal"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line2"
+        app:layout_constraintGuide_percent="0.07"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line3"
+        app:layout_constraintGuide_percent="0.93"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line4"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line5"
+        app:layout_constraintGuide_percent="0.4"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textViewVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/font2"
+        android:text="Ville"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/line3"
+        app:layout_constraintStart_toStartOf="@id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <EditText
+        android:id="@+id/ville"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ville_design"
+        android:drawableStart="@drawable/custom_ville"
+        android:drawablePadding="12dp"
+        android:elevation="4dp"
+        android:hint="Ville"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/line3"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVille" />
+
+    <TextView
+        android:id="@+id/textViewPrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/font2"
+        android:text="Prix"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line4" />
+
+    <EditText
+        android:id="@+id/textViewMin"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ville_design"
+        android:drawablePadding="12dp"
+        android:elevation="4dp"
+        android:hint="Min"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrix" />
+
+    <TextView
+        android:id="@+id/textViewBetween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Jusqu'à"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/line5"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMAx"
+        app:layout_constraintStart_toEndOf="@+id/textViewMin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrix" />
+
+    <EditText
+        android:id="@+id/textViewMAx"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ville_design"
+        android:drawablePadding="12dp"
+        android:elevation="4dp"
+        android:hint="Max"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/line3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrix" />
+
+    <TextView
+        android:id="@+id/textViewRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/font2"
+        android:text="Chambres"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/line3"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toTopOf="@+id/line5" />
+
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/line3"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRooms" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ville_design"
+        android:fontFamily="@font/font2"
+        android:text="Chercher"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/line3"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
+
+    <TextView
+        android:id="@+id/VilleError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toStartOf="@+id/line3"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/ville" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

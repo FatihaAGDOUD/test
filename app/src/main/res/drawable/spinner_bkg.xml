@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Icône à gauche -->
+    <item
+        android:drawable="@drawable/person"
+        android:gravity="start|center_vertical"
+        android:left="8dp" />
+
+    <!-- Votre forme principale -->
+    <item>
+        <shape>
+            <solid android:color="@color/white"/>
+            <corners android:radius="20dp"/>
+            <stroke
+                android:color="@color/blueSky"
+                android:width="2dp"/>
+        </shape>
+    </item>
+
+    <!-- Icône à droite -->
+    <item
+        android:drawable="@drawable/fleche"
+        android:gravity="end|center_vertical"
+        android:right="8dp" />
+</layer-list>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "689360146614",
+    "project_id": "renthome-c5ae1",
+    "storage_bucket": "renthome-c5ae1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689360146614:android:01a4a1f7930dafb2bed617",
+        "android_client_info": {
+          "package_name": "com.example.renthome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgp4GRnHyMwJYfnEWS5G_SyIhytoLZ1-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
